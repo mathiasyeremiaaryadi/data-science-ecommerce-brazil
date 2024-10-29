@@ -301,7 +301,7 @@ def visualize_customer_segmentation(main_df):
 list_month = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
 list_day = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
 
-main_df = pd.read_csv("main_data.csv")
+main_df = pd.read_csv("dashboard/main_data.csv")
 main_df["review_score"].astype("int")
 main_df["order_purchase_timestamp"] = pd.to_datetime(main_df["order_purchase_timestamp"])
 main_df["order_month"] = pd.Categorical(main_df["order_month"], categories=list_month, ordered=True)
